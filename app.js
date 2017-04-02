@@ -2,7 +2,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var path = require('path');
 
-connect to the mongoDB
+//connect to the mongoDB
 var db = require('mongoskin').db("mongodb://localhost:27017/test", { w: 0});
     db.bind('event');
 
