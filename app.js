@@ -3,8 +3,8 @@ var express = require('express');
 var path = require('path');
 
 //connect to the mongoDB
-var db = require('mongoskin').db("mongodb://localhost:27017/test", { w: 0});
-    db.bind('event');
+//var db = require('mongoskin').db("mongodb://localhost:27017/test", { w: 0});
+//    db.bind('event');
 
 //create express app, use public folder for static files
 var app = express();
@@ -32,7 +32,7 @@ app.get('/init', function(req, res){
 });
 
 
-app.get('/data', function(req, res){
+app.get('/data', function(req, res){/*
     db.event.find().toArray(function(err, data){
         //set id property for all records
         for (var i = 0; i < data.length; i++)
@@ -40,10 +40,10 @@ app.get('/data', function(req, res){
 
         //output response
         res.send(data);
-    });
+    });*/
 });
 
-app.post('/data', function(req, res){
+app.post('/data', function(req, res){/*
     var data = req.body;
 
     //get operation type
@@ -77,7 +77,7 @@ app.post('/data', function(req, res){
     else if (mode == "deleted")
         db.event.removeById( sid, update_response);
     else
-        res.send("Not supported operation");
+        res.send("Not supported operation");*/
 });
 
 app.listen(3000);

@@ -1,0 +1,29 @@
+{
+  "name": "calendarOnHeroku",
+  "version": "1.0.0",
+  "description": "First uploading scheduler on github",
+  "engines": {
+    "node": "6.10.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoskin": "*",
+    "body-parser": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Khumayun/calendarHeroku"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "mongoskin",
+    "body-parser"
+  ],
+  "license": "IUT"
+}
