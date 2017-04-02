@@ -6,7 +6,7 @@ var path = require('path');
 var db = require('mongoskin').db("mongodb://localhost:27017/test", { w: 0});
     db.bind('event');
 
-create express app, use public folder for static files
+//create express app, use public folder for static files
 var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
