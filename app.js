@@ -80,4 +80,4 @@ app.post('/data', function(req, res){/*
         res.send("Not supported operation");*/
 });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
