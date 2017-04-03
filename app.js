@@ -3,7 +3,9 @@ var express = require('express');
 var path = require('path');
 
 //connect to the mongoDB
-var db = require('mongoskin').db("mongodb://localhost:27017/test", { w: 0});
+var db = require('mongoskin').db("mongodb://reductocantoras:alahamora@ds060369.mlab.com:60369/calendar", { w: 0});
+//          mongodb://<calendaronheroku>:<Abc@12345>@ds060369.mlab.com:60369/calendar
+                        //reductocantoras  alahamora
     db.bind('event');
 
 //create express app, use public folder for static files
