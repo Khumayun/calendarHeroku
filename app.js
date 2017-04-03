@@ -10,7 +10,7 @@ var db = require('mongoskin').db("mongodb://localhost:27017/test", { w: 0});
 var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
-//is necessary for parsing POST request
+//is necessary for parsing POST request//
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/init', function(req, res){
